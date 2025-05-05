@@ -4,10 +4,12 @@ import Footer from "../components/Footer/Footer";
 import { Outlet } from "react-router";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 
 const Root = () => {
   return (
     <div className="bg-gray-900">
+      <ScrollToTop></ScrollToTop>
         <header>
             <Navbar></Navbar>
         </header>
