@@ -26,7 +26,7 @@ const Slider = () => {
               alt="Sports Event"
               className="w-full h-full object-cover"
             />
-            <div className="absolute bottom-4 md:bottom-10 left-4 md:left-10 md:bg-black bg-opacity-60 text-white p-2 md:p-4 rounded max-w-[90%] md:max-w-md">
+            <div data-aos="zoom-in" className="absolute bottom-4 md:bottom-10 left-4 md:left-10 md:bg-black bg-opacity-60 text-white p-2 md:p-4 rounded max-w-[90%] md:max-w-md transition-transform duration-500 hover:scale-105">
               <h2 className="text-base md:text-2xl font-bold">City Sports Festival</h2>
               <p className="text-sm md:text-base">
                 Experience thrilling local sports events and competitions.
@@ -43,7 +43,7 @@ const Slider = () => {
               alt="Art Exhibition"
               className="w-full h-full object-cover"
             />
-            <div className="absolute bottom-4 md:bottom-10 left-4 md:left-10 md:bg-black bg-opacity-60 text-white p-2 md:p-4 rounded max-w-[90%] md:max-w-md">
+            <div className="absolute bottom-4 md:bottom-10 left-4 md:left-10 md:bg-black bg-opacity-60 text-white p-2 md:p-4 rounded max-w-[90%] md:max-w-md transition-transform duration-500 hover:scale-105">
               <h2 className="text-base md:text-2xl font-bold">Modern Art Expo</h2>
               <p className="text-sm md:text-base">
                 Explore local creativity through stunning art pieces.
@@ -60,7 +60,7 @@ const Slider = () => {
               alt="Workshop"
               className="w-full h-full object-cover"
             />
-            <div className="absolute bottom-4 md:bottom-10 left-4 md:left-10 md:bg-black bg-opacity-60 text-white p-2 md:p-4 rounded max-w-[90%] md:max-w-md">
+            <div className="absolute bottom-4 md:bottom-10 left-4 md:left-10 md:bg-black bg-opacity-60 text-white p-2 md:p-4 rounded max-w-[90%] md:max-w-md transition-transform duration-500 hover:scale-105">
               <h2 className="text-base md:text-2xl font-bold">Tech Skills Workshop</h2>
               <p className="text-sm md:text-base">
                 Learn and upgrade your skills with expert-led sessions.
@@ -77,7 +77,7 @@ const Slider = () => {
               alt="Conference"
               className="w-full h-full object-cover"
             />
-            <div className="absolute bottom-4 md:bottom-10 left-4 md:left-10 md:bg-black bg-opacity-60 text-white p-2 md:p-4 rounded max-w-[90%] md:max-w-md">
+            <div className="absolute bottom-4 md:bottom-10 left-4 md:left-10 md:bg-black bg-opacity-60 text-white p-2 md:p-4 rounded max-w-[90%] md:max-w-md transition-transform duration-500 hover:scale-105">
               <h2 className="text-base md:text-2xl font-bold">Business Conference 2025</h2>
               <p className="text-sm md:text-base">
                 Join top minds discussing innovation and entrepreneurship.

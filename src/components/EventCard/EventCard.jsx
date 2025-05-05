@@ -27,7 +27,7 @@ const EventCard = ({ event }) => {
       </p>
       <p className="text-xs md:text-lg text-accent mb-2 md:mb-4 line-clamp-2 md:line-clamp-3"><strong>Details : </strong>{description}</p>
       </div>
-      <Link to={`/eventDetails/${id}`} className="mt-auto py-1 md:py-2 text-xs md:text-lg font-medium text-secondary border-t border-gray-600 bg-gray-900 w-full text-center hover:text-white hover:bg-secondary rounded-b-xl hover:rounded-b-xl">
+      <Link to={`/eventDetails/${id}`} data-aos="zoom-in" className="mt-auto py-1 md:py-2 text-xs md:text-lg font-medium text-secondary border-t border-gray-600 bg-gray-900 w-full text-center hover:text-white hover:bg-secondary rounded-b-xl hover:rounded-b-xl">
         View More
       </Link>
     </div>
