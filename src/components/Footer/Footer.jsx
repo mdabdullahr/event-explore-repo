@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaInstagramSquare, FaTwitter } from "react-ico
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-10 px-4 mt-20">
+    <footer className="bg-gradient-to-r from-[#380b6e96] to-gray-900 text-white py-10 px-4 mt-20">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Logo and About */}
         <div>

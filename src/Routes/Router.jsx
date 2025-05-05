@@ -4,6 +4,7 @@ import Home from "../Pages/Home";
 import Blogs from "../Pages/Blogs";
 import Profile from "../Pages/Profile";
 import Loader from "../Pages/Loader";
+import EventDetails from "../Pages/EventDetails";
 
 export const router = createBrowserRouter([
     {
@@ -23,16 +24,14 @@ export const router = createBrowserRouter([
             {
                 path: "profile",
                 Component: Profile
+            },
+            {
+                path: "eventDetails/:id",
+                Component: EventDetails,
+                loader: () => fetch('/event.json'),
+                hydrateFallbackElement: <Loader></Loader>
             }
         ]
-    },
-    {
-        path: "/auth",
-        element: <h3>All Blogs</h3>
-    }, 
-    {
-        path: "/about",
-        element: <h3>This is About page</h3>
     },
     {
         path: "/*",
