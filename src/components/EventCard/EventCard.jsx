@@ -4,25 +4,27 @@ const EventCard = ({ event }) => {
   const { thumbnail, name, category, date, location, entryFee, description } =
     event;
   return (
-    <div className="max-w-md rounded-2xl p-2 md:p-4 bg-white flex flex-col flex-1 shadow">
+    <div className="max-w-lg rounded-2xl flex flex-col flex-1 shadow-lg shadow-gray-600 border border-gray-600">
       <img
         src={thumbnail}
         alt={name}
         className="w-full h-24 md:h-48 lg:h-72 object-cover rounded-t-xl mb-2 md:mb-4"
       />
-      <h2 className="text-sm md:text-xl lg:text-2xl text-primary font-bold mb-1 border-t border-base-300 pt-1">{name}</h2>
-      <p className="text-xs md:text-lg text-accent mb-1 md:mb-2 font-semibold">{category}</p>
-      <p className=" text-xs md:text-lg mb-1 text-accent">
-        <strong>Date:</strong> {date}
+      <div className="px-2 md:px-4">
+      <h2 className="text-sm md:text-xl lg:text-2xl text-gray-200 font-bold mb-1 md:mb-3">{name}</h2>
+      <p className="text-xs md:text-lg text-gray-400 mb-1 md:mb-3 font-semibold">{category}</p>
+      <p className=" text-xs md:text-lg mb-1 md:mb-3 text-gray-400">
+        <strong>Date :</strong> {date}
       </p>
-      <p className="text-xs md:text-lg mb-1 text-accent">
-        <strong>Location:</strong> {location}
+      <p className="text-xs md:text-lg mb-1 md:mb-3 text-gray-400">
+        <strong>Location :</strong> {location}
       </p>
-      <p className="text-xs md:text-lg mb-1 md:mb-2 text-accent">
-        <strong>Entry Fee:</strong> {entryFee}
+      <p className="text-xs md:text-lg mb-1 md:mb-3 text-gray-400">
+        <strong>Entry Fee :</strong> {entryFee}
       </p>
-      <p className="text-xs md:text-lg text-accent mb-2 md:mb-4 line-clamp-2 md:line-clamp-3"><strong>Details: </strong>{description}</p>
-      <button className="mt-auto py-1 md:py-2 text-xs md:text-lg font-medium text-secondary border border-base-300 bg-gray-800 w-full hover:text-white hover:bg-secondary rounded-b-xl hover:rounded">
+      <p className="text-xs md:text-lg text-accent mb-2 md:mb-4 line-clamp-2 md:line-clamp-3"><strong>Details : </strong>{description}</p>
+      </div>
+      <button className="mt-auto py-1 md:py-2 text-xs md:text-lg font-medium text-secondary border-t border-gray-600 bg-gray-900 w-full hover:text-white hover:bg-secondary rounded-b-xl hover:rounded-b-xl">
         View More
       </button>
     </div>

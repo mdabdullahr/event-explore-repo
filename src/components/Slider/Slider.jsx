@@ -16,7 +16,7 @@ const Slider = () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={true}
-        className="w-full h-[200px] md:h-[400px] lg:h-[850px]"
+        className="w-full h-[200px] md:h-[400px] lg:h-[875px]"
       >
         {/* Slide 1 */}
         <SwiperSlide>
