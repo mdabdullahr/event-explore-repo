@@ -10,7 +10,7 @@ const links = <>
 
 const Navbar = () => {
   return (
-    <div className="bg-primary">
+    <div className="bg-gray-900">
       <div className="navbar w-11/12
      mx-auto py-3">
       <div className="navbar-start">
@@ -42,7 +42,7 @@ const Navbar = () => {
         </div>
         <VscSymbolEvent size={25} color="#FFFFFF"/>
 
-        <a className="text-xl md:text-2xl font-bold text-base-100">Event <span className="text-secondary font-semibold">Explorer</span></a>
+        <a className="text-sm md:text-2xl font-bold text-base-100">Event <span className="text-secondary font-semibold">Explorer</span></a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
