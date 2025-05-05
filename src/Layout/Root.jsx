@@ -9,7 +9,7 @@ const Root = () => {
         <header>
             <Navbar></Navbar>
         </header>
-        <main>
+        <main className="h-[calc(100vh-259px)] overflow-y-auto">
             <Outlet></Outlet>
         </main>
         <footer>
