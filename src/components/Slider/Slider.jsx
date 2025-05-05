@@ -16,7 +16,7 @@ const Slider = () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={true}
-        className="w-full h-[200px] md:h-[600px]"
+        className="w-full h-[200px] md:h-[400px] lg:h-[850px]"
       >
         {/* Slide 1 */}
         <SwiperSlide>
@@ -24,7 +24,7 @@ const Slider = () => {
             <img
               src="https://i.ibb.co.com/MyhdfJQM/sports.jpg"
               alt="Sports Event"
-              className="w-full h-full object-cover rounded-xl"
+              className="w-full h-full object-cover"
             />
             <div className="absolute bottom-4 md:bottom-10 left-4 md:left-10 md:bg-black bg-opacity-60 text-white p-2 md:p-4 rounded max-w-[90%] md:max-w-md">
               <h2 className="text-base md:text-2xl font-bold">City Sports Festival</h2>
@@ -41,7 +41,7 @@ const Slider = () => {
             <img
               src="https://i.ibb.co.com/G3Jn94nY/art.jpg"
               alt="Art Exhibition"
-              className="w-full h-full object-cover rounded-xl"
+              className="w-full h-full object-cover"
             />
             <div className="absolute bottom-4 md:bottom-10 left-4 md:left-10 md:bg-black bg-opacity-60 text-white p-2 md:p-4 rounded max-w-[90%] md:max-w-md">
               <h2 className="text-base md:text-2xl font-bold">Modern Art Expo</h2>
@@ -58,7 +58,7 @@ const Slider = () => {
             <img
               src="https://i.ibb.co.com/Skvy517/workshop.jpg"
               alt="Workshop"
-              className="w-full h-full object-cover rounded-xl"
+              className="w-full h-full object-cover"
             />
             <div className="absolute bottom-4 md:bottom-10 left-4 md:left-10 md:bg-black bg-opacity-60 text-white p-2 md:p-4 rounded max-w-[90%] md:max-w-md">
               <h2 className="text-base md:text-2xl font-bold">Tech Skills Workshop</h2>
@@ -75,7 +75,7 @@ const Slider = () => {
             <img
               src="https://i.ibb.co.com/GQnYSXKP/confarence.jpg"
               alt="Conference"
-              className="w-full h-full object-cover rounded-xl"
+              className="w-full h-full object-cover"
             />
             <div className="absolute bottom-4 md:bottom-10 left-4 md:left-10 md:bg-black bg-opacity-60 text-white p-2 md:p-4 rounded max-w-[90%] md:max-w-md">
               <h2 className="text-base md:text-2xl font-bold">Business Conference 2025</h2>

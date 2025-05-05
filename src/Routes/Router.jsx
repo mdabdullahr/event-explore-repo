@@ -3,6 +3,7 @@ import Root from "../Layout/Root";
 import Home from "../Pages/Home";
 import Blogs from "../Pages/Blogs";
 import Profile from "../Pages/Profile";
+import Loader from "../Pages/Loader";
 
 export const router = createBrowserRouter([
     {
@@ -11,7 +12,9 @@ export const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                Component: Home
+                Component: Home,
+                loader: ()=> fetch('/event.json'),
+                hydrateFallbackElement:<Loader></Loader>
             },
             {
                 path: "blogs",
