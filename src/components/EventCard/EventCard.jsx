@@ -6,11 +6,13 @@ const EventCard = ({ event }) => {
     event;
   return (
     <div className="max-w-lg rounded-2xl flex flex-col flex-1 shadow-lg shadow-gray-600 border border-gray-600">
-      <img
+     <div data-aos="zoom-in" className="overflow-hidden">
+     <img
         src={thumbnail}
         alt={name}
-        className="w-full h-24 md:h-48 xl:h-72 object-cover rounded-t-xl mb-2 md:mb-4"
+        className="w-full h-24 md:h-48 xl:h-72 object-cover rounded-t-xl mb-2 md:mb-4 transition-transform duration-500 hover:scale-90"
       />
+     </div>
       <div className="px-2 md:px-4">
       <h2 className="text-sm md:text-xl lg:text-2xl text-gray-200 font-bold mb-1 md:mb-3">{name}</h2>
       <p className="text-xs md:text-lg text-gray-400 mb-1 md:mb-3 font-semibold">{category}</p>

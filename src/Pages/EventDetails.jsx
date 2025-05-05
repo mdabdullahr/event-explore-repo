@@ -24,6 +24,7 @@ const EventDetails = () => {
         <div className='w-11/12 lg:w-9/12 mx-auto my-10'>
             <div>
                 <img
+                    data-aos="zoom-out"
                     src={thumbnail}
                     alt={name}
                     className='w-full h-72 md:h-124 xl:h-152 2xl:h-200 object-cover rounded-2xl' />
