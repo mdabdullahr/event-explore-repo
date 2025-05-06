@@ -7,6 +7,7 @@ import Loader from "../Pages/Loader";
 import EventDetails from "../Pages/EventDetails";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import PrivateRoute from "../Provider/PrivateRoute";
 
 export const router = createBrowserRouter([
     {
@@ -29,7 +30,9 @@ export const router = createBrowserRouter([
             },
             {
                 path: "eventDetails/:id",
-                Component: EventDetails,
+                element: <PrivateRoute>
+                            <EventDetails></EventDetails>
+                         </PrivateRoute>,
                 loader: () => fetch('/event.json'),
                 hydrateFallbackElement: <Loader></Loader>
             },

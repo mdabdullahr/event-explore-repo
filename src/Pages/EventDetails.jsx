@@ -71,7 +71,7 @@ const EventDetails = () => {
                         onChange={(e) => setEmail(e.target.value)}
                         required
                     />
-                    <button data-aos="zoom-in" type="submit" className="mt-5 bg-secondary w-full text-sm md:text-xl text-primary font-semibold py-3">Reserve Seat</button>
+                    <button data-aos="zoom-in" type="submit" className="mt-5 bg-secondary w-full text-sm md:text-xl text-primary font-semibold py-3 cursor-pointer">Reserve Seat</button>
                 </form>
             </div>
         </div>

@@ -1,21 +1,33 @@
 
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
+import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from 'firebase/auth';
 import React, { createContext, useEffect, useState } from 'react';
 import { auth } from '../firebase/firebase.config';
 
 
 export const AuthContext = createContext();
 
+const googleProvider = new GoogleAuthProvider();
+
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
-    const [loader, serLoader] = useState(true);
+    const [loader, setLoader] = useState(true);
+
+    const googleLogin = () => {
+        return signInWithPopup(auth, googleProvider);
+    }
 
     const createUser = (email, password) => {
+        setLoader(true);
         return createUserWithEmailAndPassword(auth, email, password);
     };
 
     const loginUser =  (email, password) => {
+        setLoader(true);
         return signInWithEmailAndPassword(auth,email,password);
+    };
+
+    const logoutUser = () =>{
+        return signOut(auth);
     }
 
     const updateUser = (updateData) =>{
@@ -26,18 +38,21 @@ const AuthProvider = ({ children }) => {
     useEffect(()=>{
         const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser);
+            setLoader(false);
         });
         return ()=> unSubscribe();
     },[])
 
     const authData = {
+        googleLogin,
         createUser,
         loginUser,
+        logoutUser,
         updateUser,
         user,
         setUser,
         loader,
-        serLoader,
+        setLoader,
     };
 
     return(

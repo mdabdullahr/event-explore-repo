@@ -30,7 +30,7 @@ const Root = () => {
         <footer>
             <Footer></Footer>
         </footer>
-        <ToastContainer />
+        <ToastContainer position="top-left"/>
     </div>
   );
 };

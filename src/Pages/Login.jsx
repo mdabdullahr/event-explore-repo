@@ -1,12 +1,13 @@
-import React, {  useContext, useState } from "react";
-import { Link} from "react-router";
+import React, { useContext } from "react";
+import { Link, useLocation, useNavigate} from "react-router";
 import { AuthContext } from '../Provider/AuthProvider';
 import { toast } from "react-toastify";
 
 
 const Login = () => {
-  const [error, setError] = useState("");
-  const {loginUser} = useContext(AuthContext);
+  const {loginUser, googleLogin} = useContext(AuthContext);
+  const navigate = useNavigate();
+  const location = useLocation();
   const handleLogin =(e)=>{
     e.preventDefault();
     const email = e.target.email.value;
@@ -14,13 +15,26 @@ const Login = () => {
     
     loginUser(email,password)
     .then(result => {
-      toast.success("User Login Successfully!");
+      toast.success("Successfully Logged In...!");
+      navigate(`${location.state ? location.state : "/"}`);
     }).catch(error => {
-      setError(error.code);
+      toast.error("Login fail " + error.code);
     })
-
-    
   };
+
+  const handleGoogleLogin = () =>{
+    googleLogin()
+    .then(res => {
+      console.log(res.user);
+      toast.success("Google LogIn Successfully...!")
+      navigate(`${location.state ? location.state : "/"}`);
+    })
+    .catch(err => {
+      console.log(err)
+      toast.error("Google LogIn fail " + err.message);
+    })
+  };
+
   return (
     <div data-aos="zoom-in" className="flex justify-center items-center mt-20">
       <form onSubmit={handleLogin} className="fieldset  w-sm lg:w-md bg-gray-800 px-5 py-8 rounded-2xl">
@@ -50,7 +64,7 @@ const Login = () => {
         <div className="divider divider-primary text-primary">OR</div>
 
         {/* Google */}
-      <button data-aos="zoom-in" className="btn rounded-xl bg-white text-black border-[#e5e5e5]  h-12">
+      <button onClick={handleGoogleLogin} data-aos="zoom-in" className="btn rounded-xl bg-white text-black border-[#e5e5e5]  h-12">
         <svg
           aria-label="Google logo"
           width="16"
@@ -80,10 +94,6 @@ const Login = () => {
         </svg>
         Login with Google
       </button>
-      {
-        error && <p className="text-secondary text-lg">{error}</p>
-      }
-
       <p className="text-lg text-accent mt-4 text-center">
         Don't Have An Account ? 
         <Link className="text-secondary underline font-semibold" to="/register">  Register</Link>
