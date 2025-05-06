@@ -8,11 +8,13 @@ import EventDetails from "../Pages/EventDetails";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import PrivateRoute from "../Provider/PrivateRoute";
+import ErrorPage from "../Pages/ErrorPage";
 
 export const router = createBrowserRouter([
     {
         path: "/",
         Component: Root,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 index: true,
@@ -29,7 +31,7 @@ export const router = createBrowserRouter([
                 Component: Profile
             },
             {
-                path: "eventDetails/:id",
+                path: "/eventDetails/:id",
                 element: <PrivateRoute>
                             <EventDetails></EventDetails>
                          </PrivateRoute>,
@@ -45,9 +47,5 @@ export const router = createBrowserRouter([
                 Component: Register
             }
         ]
-    },
-    {
-        path: "/*",
-        element: <h3>Error page 404</h3>
     }
 ])
