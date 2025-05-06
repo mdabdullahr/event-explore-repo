@@ -1,19 +1,42 @@
-import React from "react";
-import { Link } from "react-router";
+import React, {  useContext, useState } from "react";
+import { Link} from "react-router";
+import { AuthContext } from '../Provider/AuthProvider';
+import { toast } from "react-toastify";
+
 
 const Login = () => {
+  const [error, setError] = useState("");
+  const {loginUser} = useContext(AuthContext);
+  const handleLogin =(e)=>{
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    
+    loginUser(email,password)
+    .then(result => {
+      toast.success("User Login Successfully!");
+    }).catch(error => {
+      setError(error.code);
+    })
+
+    
+  };
   return (
     <div data-aos="zoom-in" className="flex justify-center items-center mt-20">
-      <form className="fieldset  w-sm lg:w-md bg-gray-800 px-5 py-8 rounded-2xl">
+      <form onSubmit={handleLogin} className="fieldset  w-sm lg:w-md bg-gray-800 px-5 py-8 rounded-2xl">
         <h3 data-aos="zoom-in" className="text-primary font-bold text-2xl text-center mb-5">Please Login!</h3>
         <label className="label text-primary text-lg ">Email</label>
         <input 
+        required
+        name="email"
         type="email" 
         className="input w-full bg-base-300 text-primary border-gray-700 rounded-xl h-12" 
         placeholder="Enter Your Email" />
         <label className="label text-primary text-lg mt-2">Password</label>
 
         <input
+          required
+          name="password"
           type="password"
           className="input w-full bg-base-300 text-primary border-gray-700 rounded-xl h-12"
           placeholder="Enter Your Password"
@@ -57,6 +80,9 @@ const Login = () => {
         </svg>
         Login with Google
       </button>
+      {
+        error && <p className="text-secondary text-lg">{error}</p>
+      }
 
       <p className="text-lg text-accent mt-4 text-center">
         Don't Have An Account ? 
