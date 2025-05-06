@@ -1,14 +1,17 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
-import { Outlet } from "react-router";
+import { Outlet, useNavigation } from "react-router";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import Aos from "aos";
 import 'aos/dist/aos.css';
+import Loader from "../Pages/Loader";
 
 const Root = () => {
+  const {state} = useNavigation();
+
   useEffect(()=>{
     Aos.init({
       duration: 1000,
@@ -22,7 +25,7 @@ const Root = () => {
             <Navbar></Navbar>
         </header>
         <main className="min-h-[calc(100vh-259px)] overflow-y-auto">
-            <Outlet></Outlet>
+            {state === "loading" ? <Loader></Loader> : <Outlet></Outlet>}
         </main>
         <footer>
             <Footer></Footer>

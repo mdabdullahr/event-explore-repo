@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import { VscSymbolEvent } from "react-icons/vsc";
 
 const links = (
@@ -63,12 +63,12 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <a
+          <Link to="/login"
             data-aos="zoom-in"
             className="text-base-100 bg-secondary text-sm md:text-xl font-medium px-8 py-2 rounded transition-transform duration-500 hover:scale-105"
           >
             Login
-          </a>
+          </Link>
         </div>
       </div>
     </div>
