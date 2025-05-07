@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { toast } from 'react-toastify';
 
@@ -19,6 +19,10 @@ const EventDetails = () => {
         setIname("");
         setEmail("");
     };
+
+    useEffect(() => {
+        document.title = `Event Explore | Event-Details | ${id}`;
+      }, [id]);
 
     return (
         <div className='w-11/12 lg:w-9/12 mx-auto my-10'>

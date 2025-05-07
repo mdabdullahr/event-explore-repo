@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../Provider/AuthProvider';
 import { toast } from 'react-toastify';
@@ -56,6 +56,10 @@ const Register = () => {
       toast.error("Google Register fail " + err.message);
     })
   };
+
+  useEffect(() => {
+    document.title = "Event Explore | Register";
+  }, []);
     return (
         <div data-aos="zoom-in" className="flex justify-center items-center mt-20">
       <form onSubmit={handleRegister} className="fieldset  w-sm lg:w-md bg-gray-800 px-5 py-8 rounded-2xl border border-gray-700">

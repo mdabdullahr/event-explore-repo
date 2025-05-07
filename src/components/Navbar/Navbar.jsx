@@ -69,7 +69,7 @@ const Navbar = () => {
           >
             <VscSymbolEvent size={25} color="#FFFFFF" />
 
-            <a className="text-sm md:text-2xl font-bold text-base-100">
+            <a className="text-xs md:text-2xl font-bold text-base-100">
               Event{" "}
               <span className="text-secondary font-semibold">Explorer</span>
             </a>
@@ -79,12 +79,12 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
 
-        <div className="navbar-end gap-5">
+        <div className="navbar-end gap-2 md:gap-5">
 
           {user && (
             <div className="relative group">
               <img
-                className="w-12 h-12 rounded-full"
+                className="w-6 md:w-12 h-6 md:h-12 rounded-full"
                 src={user.photoURL}
                 alt="userImg"
               />
@@ -98,7 +98,7 @@ const Navbar = () => {
             <button
               onClick={handleLogOut}
               data-aos="zoom-in"
-              className="text-base-100 bg-secondary text-sm md:text-xl font-medium px-8 py-2 rounded transition-transform duration-500 hover:scale-105 cursor-pointer"
+              className="text-base-100 bg-secondary text-sm md:text-xl font-medium px-3 md:px-8 py-1 md:py-2 rounded transition-transform duration-500 hover:scale-105 cursor-pointer"
             >
               LogOut
             </button>
@@ -106,7 +106,7 @@ const Navbar = () => {
             <Link
               to="/login"
               data-aos="zoom-in"
-              className="text-base-100 bg-secondary text-sm md:text-xl font-medium px-8 py-2 rounded transition-transform duration-500 hover:scale-105"
+              className="text-base-100 bg-secondary text-sm md:text-xl font-medium px-3 md:px-8 py-1 md:py-2 rounded transition-transform duration-500 hover:scale-105"
             >
               Login
             </Link>

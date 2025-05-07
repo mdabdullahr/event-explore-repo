@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link, useLocation, useNavigate} from "react-router";
 import { AuthContext } from '../Provider/AuthProvider';
 import { toast } from "react-toastify";
@@ -34,6 +34,10 @@ const Login = () => {
       toast.error("Google LogIn fail " + err.message);
     })
   };
+
+  useEffect(() => {
+    document.title = "Event Explore | Login";
+  }, []);
 
   return (
     <div data-aos="zoom-in" className="flex justify-center items-center mt-20">
