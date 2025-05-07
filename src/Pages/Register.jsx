@@ -2,10 +2,13 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../Provider/AuthProvider';
 import { toast } from 'react-toastify';
+import { ImEye } from 'react-icons/im';
+import { RiEyeCloseFill } from 'react-icons/ri';
 
 const Register = () => {
   const {createUser,setUser,updateUser,googleLogin} = useContext(AuthContext);
   const [passwordError, setPasswordError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   const handleRegister = (e) => {
     e.preventDefault();
@@ -62,7 +65,7 @@ const Register = () => {
   }, []);
     return (
         <div data-aos="zoom-in" className="flex justify-center items-center mt-20">
-      <form onSubmit={handleRegister} className="fieldset  w-sm lg:w-md bg-gray-800 px-5 py-8 rounded-2xl border border-gray-700">
+      <form onSubmit={handleRegister} className="space-y-2 w-full max-w-md mx-auto bg-gray-800 p-6 my-10 rounded-2xl border border-gray-700">
         <h3 data-aos="zoom-in" className="text-primary font-bold text-2xl text-center mb-5">Register Now!</h3>
 
         {/* Name */}
@@ -94,18 +97,27 @@ const Register = () => {
 
         {/* Password */}
         <label className="label text-accent text-lg mt-2">Password</label>
+        <div className='relative'>
         <input
           required
           name='password'
-          type="password"
+          type={showPassword ? "text" : "password"}
           className="input w-full bg-base-300 text-primary border-gray-700 rounded-xl h-12"
           placeholder="Enter Your Password"
         />
+         <button
+          onClick={()=>setShowPassword(!showPassword)}
+          className='text-white absolute top-4 right-3 cursor-pointer'>
+         {
+          showPassword ? <RiEyeCloseFill /> : <ImEye size={15}/>
+         }
+         </button>
+        </div>
         {
           passwordError && <p className='text-secondary text-lg'>{passwordError}</p>
         }
 
-        <button data-aos="zoom-in" type="submit" className="bg-secondary text-primary text-lg font-semibold rounded-xl cursor-pointer mt-5 h-12">Register</button>
+        <button data-aos="zoom-in" type="submit" className="bg-secondary cursor-pointer text-primary text-lg font-semibold rounded-xl h-12 w-full mt-4">Register</button>
 
       <p className="text-lg text-accent mt-4 text-center">
         Already Have An Account ? 
@@ -114,7 +126,7 @@ const Register = () => {
         <div className="divider divider-primary text-primary">OR</div>
 
         {/* Google */}
-      <button onClick={registerWithGoogle} data-aos="zoom-in" className="btn rounded-xl bg-white text-black border-[#e5e5e5]  h-12">
+      <button onClick={registerWithGoogle} data-aos="zoom-in" className="btn rounded-xl bg-white text-black border-[#e5e5e5]  h-12 w-full">
         <svg
           aria-label="Google logo"
           width="16"

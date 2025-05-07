@@ -31,9 +31,9 @@ const Profile = () => {
           alt="User"
           className="w-32 h-32 mx-auto rounded-full border-4 border-primary"
         />
-        <h2 className="text-2xl font-bold text-primary">{user?.displayName}</h2>
-        <p className="text-xl">Email : {user?.email}</p>
-        <p className="text-lg">Photo : {user?.photoURL}</p>
+        <h2 className="text-xl md:text-2xl font-bold text-primary">{user?.displayName}</h2>
+        <p className="text-sm md:text-xl">Email : {user?.email}</p>
+        <p className="text-xs md:text-lg">Photo : {user?.photoURL}</p>
       </div>
 
       <form

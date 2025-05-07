@@ -39,7 +39,7 @@ const Login = () => {
 
   return (
     <div data-aos="zoom-in" className="flex justify-center items-center mt-20">
-      <form onSubmit={handleLogin} className="fieldset  w-sm lg:w-md bg-gray-800 px-5 py-8 rounded-2xl">
+      <form onSubmit={handleLogin} className="space-y-2 w-full max-w-md mx-auto bg-gray-800 p-6 my-10 rounded-2xl border border-gray-700">
         <h3 data-aos="zoom-in" className="text-primary font-bold text-2xl text-center mb-5">Please Login!</h3>
         <label className="label text-primary text-lg ">Email</label>
         <input 
@@ -61,12 +61,12 @@ const Login = () => {
           <a className="link link-hover underline text-secondary">Forgot password?</a>
         </div>
 
-        <button data-aos="zoom-in" type="submit" className="bg-secondary text-primary text-lg font-semibold rounded-xl cursor-pointer mt-2 h-12">Login</button>
+        <button data-aos="zoom-in" type="submit" className="bg-secondary cursor-pointer text-primary text-lg font-semibold rounded-xl h-12 w-full mt-4">Login</button>
 
         <div className="divider divider-primary text-primary">OR</div>
 
         {/* Google */}
-      <button onClick={handleGoogleLogin} data-aos="zoom-in" className="btn rounded-xl bg-white text-black border-[#e5e5e5]  h-12">
+      <button onClick={handleGoogleLogin} data-aos="zoom-in" className="btn rounded-xl bg-white text-black border-[#e5e5e5]  h-12 w-full">
         <svg
           aria-label="Google logo"
           width="16"
