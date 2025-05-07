@@ -11,6 +11,8 @@ import PrivateRoute from "../Provider/PrivateRoute";
 import ErrorPage from "../Pages/ErrorPage";
 import FAQ from "../Pages/FAQ";
 import ForgotPassword from "../Pages/ForgotPassword";
+import TermsCondition from "../Pages/TermsCondition";
+import PrivacyPolicy from "../Pages/PrivacyPolicy";
 
 export const router = createBrowserRouter([
     {
@@ -59,7 +61,16 @@ export const router = createBrowserRouter([
                 element: <PrivateRoute>
                     <FAQ></FAQ>
                 </PrivateRoute>
+            },
+            {
+                path: "terms-and-conditions",
+                Component: TermsCondition
+            }, 
+            {
+                path: "privacy-policy",
+                Component: PrivacyPolicy
             }
+
         ]
     }
 ])

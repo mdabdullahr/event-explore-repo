@@ -13,7 +13,7 @@ const links = (
       <NavLink to="/faq">FAQ</NavLink>
     </li>
     <li className="text-lg md:text-xl text-base-100">
-      <NavLink to="/profile">Profile</NavLink>
+      <NavLink to="/profile">My Profile</NavLink>
     </li>
   </>
 );
@@ -31,7 +31,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-900 border-b border-gray-800">
       <div
         className="navbar w-11/12
      mx-auto py-3"
@@ -76,7 +76,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{links}</ul>
+          <ul className="menu menu-horizontal px-1 space-x-5">{links}</ul>
         </div>
 
         <div className="navbar-end gap-2 md:gap-5">
