@@ -10,10 +10,10 @@ const links = (
       <NavLink to="/">Home</NavLink>
     </li>
     <li className="text-lg md:text-xl text-base-100">
-      <NavLink to="blogs">Blogs</NavLink>
+      <NavLink to="/faq">FAQ</NavLink>
     </li>
     <li className="text-lg md:text-xl text-base-100">
-      <NavLink to="profile">Profile</NavLink>
+      <NavLink to="/profile">Profile</NavLink>
     </li>
   </>
 );

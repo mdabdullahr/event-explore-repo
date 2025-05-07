@@ -9,6 +9,7 @@ import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import PrivateRoute from "../Provider/PrivateRoute";
 import ErrorPage from "../Pages/ErrorPage";
+import FAQ from "../Pages/FAQ";
 
 export const router = createBrowserRouter([
     {
@@ -28,7 +29,9 @@ export const router = createBrowserRouter([
             },
             {
                 path: "profile",
-                Component: Profile
+                element: <PrivateRoute>
+                    <Profile></Profile>
+                </PrivateRoute>
             },
             {
                 path: "/eventDetails/:id",
@@ -45,6 +48,12 @@ export const router = createBrowserRouter([
             {
                 path: "register",
                 Component: Register
+            },
+            {
+                path: "faq",
+                element: <PrivateRoute>
+                    <FAQ></FAQ>
+                </PrivateRoute>
             }
         ]
     }
