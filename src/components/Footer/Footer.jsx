@@ -14,7 +14,7 @@ const Footer = () => {
           >
             <VscSymbolEvent size={25} color="#FFFFFF" />
 
-            <a className="text-xs md:text-2xl font-bold text-base-100">
+            <a className="text-2xl font-bold text-base-100">
               Event{" "}
               <span className="text-secondary font-semibold">Explorer</span>
             </a>

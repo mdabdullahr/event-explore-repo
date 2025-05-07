@@ -7,7 +7,6 @@ import { RiEyeCloseFill } from 'react-icons/ri';
 
 const Register = () => {
   const {createUser,setUser,updateUser,googleLogin} = useContext(AuthContext);
-  const [passwordError, setPasswordError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   const handleRegister = (e) => {
@@ -18,17 +17,17 @@ const Register = () => {
     const password = e.target.password.value;
 
     if (!/[A-Z]/.test(password)) {
-      setPasswordError("Password must contain at least one uppercase letter.");
+      toast.error("Password must contain at least one uppercase letter.");
       return;
     }
   
     if (!/[a-z]/.test(password)) {
-      setPasswordError("Password must contain at least one lowercase letter.");
+      toast.error("Password must contain at least one lowercase letter.");
       return;
     }
   
     if (password.length < 6) {
-      setPasswordError("Password must be at least 6 characters long.");
+      toast.error("Password must be at least 6 characters long.");
       return;
     }
 
@@ -113,9 +112,6 @@ const Register = () => {
          }
          </button>
         </div>
-        {
-          passwordError && <p className='text-secondary text-lg'>{passwordError}</p>
-        }
 
         <button data-aos="zoom-in" type="submit" className="bg-secondary cursor-pointer text-primary text-lg font-semibold rounded-xl h-12 w-full mt-4">Register</button>
 
