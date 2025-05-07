@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate} from "react-router";
 import { AuthContext } from '../Provider/AuthProvider';
 import { toast } from "react-toastify";
@@ -8,6 +8,7 @@ const Login = () => {
   const {loginUser, googleLogin} = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
+  const emailRef = useRef();
   const handleLogin =(e)=>{
     e.preventDefault();
     const email = e.target.email.value;
@@ -33,6 +34,11 @@ const Login = () => {
     })
   };
 
+  const handleForgotPassword = () =>{
+    const email = emailRef.current.value;
+    navigate('/forgot-password', { state: { email } });
+  }
+
   useEffect(() => {
     document.title = "Event Explore | Login";
   }, []);
@@ -45,6 +51,7 @@ const Login = () => {
         <input 
         required
         name="email"
+        ref={emailRef}
         type="email" 
         className="input w-full bg-base-300 text-primary border-gray-700 rounded-xl h-12" 
         placeholder="Enter Your Email" />
@@ -58,7 +65,7 @@ const Login = () => {
           placeholder="Enter Your Password"
         />
         <div>
-          <a className="link link-hover underline text-secondary">Forgot password?</a>
+          <a onClick={handleForgotPassword} className="link link-hover underline text-secondary">Forgot password?</a>
         </div>
 
         <button data-aos="zoom-in" type="submit" className="bg-secondary cursor-pointer text-primary text-lg font-semibold rounded-xl h-12 w-full mt-4">Login</button>
