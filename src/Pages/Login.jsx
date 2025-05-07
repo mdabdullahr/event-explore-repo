@@ -25,12 +25,10 @@ const Login = () => {
   const handleGoogleLogin = () =>{
     googleLogin()
     .then(res => {
-      console.log(res.user);
       toast.success("Google LogIn Successfully...!")
       navigate(`${location.state ? location.state : "/"}`);
     })
     .catch(err => {
-      console.log(err)
       toast.error("Google LogIn fail " + err.message);
     })
   };
