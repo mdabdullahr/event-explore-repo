@@ -7,6 +7,7 @@
       "date": "2025-06-15",
       "location": "Dhaka, Bangladesh",
       "entryFee": "$25",
+      "rating": 4.9,
       "description": "The Tech Innovation Conference 2025 will bring together the brightest minds in technology, innovation, and entrepreneurship. Attendees will have the opportunity to network with industry leaders, engage in panel discussions, and learn about the latest trends in AI, cybersecurity, and software development. Keynote speakers will include experts from top global tech companies, and there will be workshops focused on startup growth and tech-driven business strategies."
     },
     {
@@ -17,6 +18,7 @@
       "date": "2025-07-20",
       "location": "Chittagong",
       "entryFee": "$30",
+      "rating": 4.3,
       "description": "The Cybersecurity Awareness Summit aims to educate business owners, IT professionals, and students on the importance of securing digital infrastructure. Experts will share insights on modern cyber threats, data protection laws, and best practices for preventing cyber-attacks. The event will include real-life case studies, live hacking demonstrations, and networking opportunities with industry leaders in cybersecurity."
     },
     {
@@ -27,6 +29,7 @@
       "date": "2025-08-05",
       "location": "Sylhet, Bangladesh",
       "entryFee": "$20",
+      "rating": 4.4,
       "description": "This hands-on workshop is designed for aspiring web developers. You’ll learn how to create dynamic and responsive websites using HTML, CSS, and JavaScript. Our experienced instructors will guide you through interactive coding challenges, followed by live demonstrations. You will also learn best practices in web development, including version control using Git. Whether you're a beginner or an intermediate developer, this workshop will help you build your skills."
     },
     {
@@ -37,6 +40,7 @@
       "date": "2025-09-10",
       "location": "Rajshahi",
       "entryFee": "$15",
+      "rating": 4.8,
       "description": "In this Creative Photography Workshop, attendees will learn the art of capturing stunning photographs with an emphasis on creativity, composition, and editing. The workshop will cover both technical aspects of photography, such as camera settings, and artistic techniques like framing, lighting, and color theory. At the end of the day, participants will have a chance to share their work and receive feedback from experienced photographers."
     },
     {
@@ -47,6 +51,7 @@
       "date": "2025-10-10",
       "location": "Dhaka, Bangladesh",
       "entryFee": "Free",
+      "rating": 3.9,
       "description": "The Dhaka Football League 2025 will bring together top local football teams from across the city. The event will feature intense matches with some of the most skilled players in the region. Whether you’re a fan of the sport or just enjoy the electric atmosphere, this tournament is a must-attend. The league will run for two weeks, culminating in a grand finale that promises exciting moments for fans."
     },
     {
@@ -57,6 +62,7 @@
       "date": "2025-11-01",
       "location": "Khulna, Bangladesh",
       "entryFee": "$10",
+      "rating": 4.5,
       "description": "Cricket enthusiasts will gather for the annual Bangladesh National Cricket Championship, where regional teams compete for the championship title. This event is an opportunity to see emerging players showcase their talent. The championship will feature matches across several days, and fans will have the chance to meet their favorite players and enjoy live commentary."
     },
     {
@@ -67,6 +73,7 @@
       "date": "2025-12-05",
       "location": "Barisal, Bangladesh",
       "entryFee": "$5",
+      "rating": 4.1,
       "description": "The Art & Craft Exhibition is an excellent opportunity for art lovers to explore and purchase unique handmade crafts and artworks from local artists. Featuring sculptures, paintings, photography, and other art forms, this exhibition brings together the best of traditional and modern art. Whether you're looking for a special piece of art for your home or just love to admire the creative process, this event is the place to be."
     },
     {
@@ -77,6 +84,7 @@
       "date": "2025-12-20",
       "location": "Dhaka, Bangladesh",
       "entryFee": "$10",
+      "rating": 3.8,
       "description": "The Contemporary Art Show will showcase the works of emerging and established artists who are pushing the boundaries of art in modern times. This exhibition will feature paintings, digital art, sculptures, and multimedia installations that challenge traditional art forms. It’s a great opportunity to see the innovative approaches artists are taking in today’s world."
     },
     {
@@ -87,6 +95,7 @@
       "date": "2025-09-25",
       "location": "Dhaka, Bangladesh",
       "entryFee": "$10",
+      "rating": 4.2,
       "description": "The Sustainable Living Fair will bring together eco-friendly brands, products, and initiatives that aim to reduce the environmental impact of everyday living. The event will feature workshops on sustainable practices, eco-friendly products, and discussions on the future of sustainability in Bangladesh. The fair is a great place to learn how to live a greener life while supporting businesses that care for the planet."
     },
     {
@@ -97,6 +106,7 @@
       "date": "2025-07-18",
       "location": "Sylhet, Bangladesh",
       "entryFee": "$30",
+      "rating": 3.5,
       "description": "Join us for a beginner-friendly coding bootcamp where you will learn the basics of web development, including HTML, CSS, and JavaScript. This bootcamp is ideal for individuals looking to switch careers or develop new skills. Experienced instructors will guide you through interactive lessons, and at the end of the bootcamp, you’ll have built your own personal website. No prior coding experience is required."
     },
     {
@@ -107,6 +117,7 @@
       "date": "2025-10-25",
       "location": "Dhaka, Bangladesh",
       "entryFee": "$50",
+      "rating": 4.3,
       "description": "This workshop is for aspiring fashion designers who are looking to enhance their skills in textile design. The workshop will cover fabric selection, color theory, and various design techniques to help participants create stunning garments. Participants will also have the opportunity to work with industry professionals and gain valuable insights into the fashion industry."
     },
     {
@@ -117,6 +128,7 @@
       "date": "2025-11-30",
       "location": "Dhaka, Bangladesh",
       "entryFee": "Free",
+      "rating": 3.8,
       "description": "The Startup Pitch Event is an exciting opportunity for entrepreneurs to present their startup ideas to potential investors. The event will feature pitch sessions where startups will showcase their innovations, followed by a networking session. Whether you’re an entrepreneur looking for funding or an investor seeking the next big idea, this event provides a platform to connect with like-minded individuals."
     }
   ]
