@@ -6,8 +6,8 @@ const PrivacyPolicy = () => {
       }, []);
     
       return (
-        <div className="max-w-4xl mx-auto text-gray-300 p-6 space-y-4 mt-10 lg:mt-20 shadow-xl shadow-[#34116241] rounded-2xl">
-          <h1 className="text-3xl font-bold text-secondary mb-4">Privacy Policy</h1>
+        <div data-aos="zoom-in" className="max-w-4xl mx-auto text-gray-300 p-6 space-y-4 mt-10 lg:mt-20 shadow-xl shadow-[#34116241] rounded-2xl transition-transform duration-500 hover:scale-105">
+          <h1 data-aos="zoom-in" className="text-3xl font-bold text-secondary mb-4 transition-transform duration-500 hover:scale-105">Privacy Policy</h1>
           <p>
             At Event Explore, we respect your privacy. This policy outlines what data we collect and how we use it.
           </p>

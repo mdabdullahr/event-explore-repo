@@ -6,14 +6,14 @@ const FAQ = () => {
   }, []);
   return (
 
-      <div className="w-11/12 lg:w-9/12 2xl:w-8/12 mx-auto mt-10 space-y-6 bg-gray-800 p-5  md:p-10 rounded-3xl">
-      <h2 className="text-xl md:text-4xl xl:text-5xl font-bold text-center text-accent pt-5 pb-5 lg:pb-10 underline">
+      <div className="w-11/12 lg:w-9/12 2xl:w-8/12 mx-auto mt-10 space-y-6 bg-gray-800 p-5  md:p-20 rounded-3xl">
+      <h2 data-aos="zoom-out" className="text-xl md:text-4xl xl:text-5xl font-bold text-center text-accent pt-5 pb-5 lg:pb-10 underline transition-transform duration-500 hover:scale-105">
         Frequently <span className="text-secondary">Asked</span> Questions
       </h2>
       {/* FAQ non 1 */}
-      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 ">
+      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 transition-transform duration-500 hover:scale-105 ">
         <input type="radio" name="my-accordion-2" defaultChecked />
-        <div className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
+        <div data-aos="zoom-in" className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl ">
           Who are we?
         </div>
         <div className="collapse-content text-xs lg:text-lg xl:text-xl text-accent">
@@ -27,9 +27,9 @@ const FAQ = () => {
       </div>
 
       {/* faq no 2 */}
-      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 ">
+      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 transition-transform duration-500 hover:scale-105">
         <input type="radio" name="my-accordion-2" />
-        <div className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
+        <div data-aos="zoom-in" className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
           Why stay with us?
         </div>
         <div className="collapse-content text-xs lg:text-lg xl:text-xl text-accent">
@@ -43,9 +43,9 @@ const FAQ = () => {
       </div>
 
       {/* faq no 3 */}
-      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 ">
+      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 transition-transform duration-500 hover:scale-105">
         <input type="radio" name="my-accordion-2" />
-        <div className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
+        <div data-aos="zoom-in" className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
           How do I find an event?
         </div>
         <div className="collapse-content text-xs lg:text-lg xl:text-xl text-accent">
@@ -55,9 +55,9 @@ const FAQ = () => {
       </div>
 
       {/* faq no 4 */}
-      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 ">
+      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 transition-transform duration-500 hover:scale-105">
         <input type="radio" name="my-accordion-2" />
-        <div className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
+        <div data-aos="zoom-in" className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
           Where can I find detailed information about the event?
         </div>
         <div className="collapse-content text-xs lg:text-lg xl:text-xl text-accent">
@@ -68,9 +68,9 @@ const FAQ = () => {
       </div>
 
       {/* faq no 5 */}
-      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 ">
+      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 transition-transform duration-500 hover:scale-105">
         <input type="radio" name="my-accordion-2" />
-        <div className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
+        <div data-aos="zoom-in" className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
           What do I need to do to participate in the event?
         </div>
         <div className="collapse-content text-xs lg:text-lg xl:text-xl text-accent">
@@ -81,9 +81,9 @@ const FAQ = () => {
       </div>
 
       {/* faq no 6 */}
-      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 ">
+      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 transition-transform duration-500 hover:scale-105">
         <input type="radio" name="my-accordion-2" />
-        <div className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
+        <div data-aos="zoom-in" className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
           Can I give ratings and feedback on the event?
         </div>
         <div className="collapse-content text-xs lg:text-lg xl:text-xl text-accent">
@@ -94,9 +94,9 @@ const FAQ = () => {
       </div>
 
       {/* faq no 7 */}
-      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 ">
+      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 transition-transform duration-500 hover:scale-105">
         <input type="radio" name="my-accordion-2" />
-        <div className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
+        <div data-aos="zoom-in" className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
           Is this website usable on mobile devices?
         </div>
         <div className="collapse-content text-xs lg:text-lg xl:text-xl text-accent">
@@ -105,9 +105,9 @@ const FAQ = () => {
       </div>
 
       {/* faq no 8 */}
-      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 ">
+      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 transition-transform duration-500 hover:scale-105">
         <input type="radio" name="my-accordion-2" />
-        <div className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
+        <div data-aos="zoom-in" className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
           What should I do if I forget my password?
         </div>
         <div className="collapse-content text-xs lg:text-lg xl:text-xl text-accent">
@@ -117,9 +117,9 @@ const FAQ = () => {
       </div>
 
       {/* faq no 9 */}
-      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 ">
+      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 transition-transform duration-500 hover:scale-105">
         <input type="radio" name="my-accordion-2" />
-        <div className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
+        <div data-aos="zoom-in" className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
           Do I need an account to view events details?
         </div>
         <div className="collapse-content text-xs lg:text-lg xl:text-xl text-accent">
@@ -129,9 +129,9 @@ const FAQ = () => {
       </div>
 
       {/* faq no 10 */}
-      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 ">
+      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 transition-transform duration-500 hover:scale-105">
         <input type="radio" name="my-accordion-2" />
-        <div className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
+        <div data-aos="zoom-in" className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
           Is this platform free to use?
         </div>
         <div className="collapse-content text-xs lg:text-lg xl:text-xl text-accent">
@@ -141,9 +141,9 @@ const FAQ = () => {
       </div>
 
       {/* faq no 11 */}
-      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 ">
+      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 transition-transform duration-500 hover:scale-105">
         <input type="radio" name="my-accordion-2" />
-        <div className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
+        <div data-aos="zoom-in" className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
           Will I get reminders for upcoming events?
         </div>
         <div className="collapse-content text-xs lg:text-lg xl:text-xl text-accent">
@@ -153,9 +153,9 @@ const FAQ = () => {
       </div>
 
       {/* faq no 12 */}
-      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 ">
+      <div className="collapse collapse-arrow bg-gray-900 border border-gray-700 p-0 md:p-5 transition-transform duration-500 hover:scale-105">
         <input type="radio" name="my-accordion-2" />
-        <div className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
+        <div data-aos="zoom-in" className="collapse-title font-semibold text-primary text-sm md:text-xl lg:text-2xl">
           How do I update my profile information?
         </div>
         <div className="collapse-content text-xs lg:text-lg xl:text-xl text-accent">

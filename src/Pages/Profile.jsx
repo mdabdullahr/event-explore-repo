@@ -24,23 +24,25 @@ const Profile = () => {
   }, []);
 
   return (
-    <div className="w-11/12 md:w-9/12 lg:w-7/12 mx-auto mt-10 bg-gray-800 text-accent rounded-3xl p-5 md:p-10">
+    <div data-aos="zoom-in" className="w-11/12 md:w-9/12 lg:w-7/12 mx-auto mt-10 bg-gray-800 text-accent rounded-3xl p-5 md:p-10">
       <div className="text-center space-y-3">
         <img
+          data-aos="zoom-in"
           src={user?.photoURL}
           alt="User"
-          className="w-32 h-32 mx-auto rounded-full border-4 border-primary"
+          className="w-32 h-32 mx-auto rounded-full border-4 border-primary  transition-transform duration-500 hover:scale-105"
         />
-        <h2 className="text-xl md:text-2xl font-bold text-primary">{user?.displayName}</h2>
-        <p className="text-sm md:text-xl">Email : {user?.email}</p>
-        <p className="text-xs md:text-lg">Photo : {user?.photoURL}</p>
+        <h2 className="text-xl md:text-2xl font-bold text-primary  transition-transform duration-500 hover:scale-105">{user?.displayName}</h2>
+        <p className="text-sm md:text-xl  transition-transform duration-500 hover:scale-105">Email : {user?.email}</p>
+        <p className="text-xs md:text-lg  transition-transform duration-500 hover:scale-105">Photo : {user?.photoURL}</p>
       </div>
 
       <form
+        data-aos="zoom-in"
         onSubmit={handleUpdate}
-        className="space-y-4 w-full max-w-md mx-auto bg-gray-800 p-6 my-10 rounded-2xl border border-gray-700"
+        className="space-y-4 w-full max-w-md mx-auto bg-gray-800 p-6 my-10 rounded-2xl border border-gray-700 "
       >
-        <h2 className="text-2xl font-bold text-center text-primary">
+        <h2 data-aos="zoom-out" className="text-2xl font-bold text-center text-primary transition-transform duration-500 hover:scale-105">
           Update Profile
         </h2>
 
@@ -66,6 +68,7 @@ const Profile = () => {
 
         {/* Submit button */}
         <button
+          data-aos="zoom-in"
           type="submit"
           className="bg-secondary cursor-pointer text-primary text-lg font-semibold rounded-xl h-12 w-full mt-4"
         >
