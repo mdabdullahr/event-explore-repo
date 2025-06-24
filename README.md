@@ -23,20 +23,71 @@ This project is built using **React**, **Firebase**, and **TailwindCSS**, offeri
 - **Scroll Animations**: Implemented using the `aos` package.
 - **User Profile**: Users can view and edit their profile details like name and photo.
 
-## 📦 NPM Packages Used
-The following packages are used in this project:
+## 📦 Dependencies & Versions
 
-- **@tailwindcss/vite** – For integrating TailwindCSS with Vite.
-- **aos** – For scroll animations.
-- **firebase** – For user authentication and Firebase services.
-- **react** – For building the user interface.
-- **react-dom** – For DOM rendering in React.
-- **react-icons** – For using icons in the UI.
-- **react-router** – For managing navigation and routing in the app.
-- **react-toastify** – For showing notifications/toasts to users.
-- **swiper** – For creating the event slider.
-- **tailwindcss** – For utility-first CSS styling.
-- **daisyui** – For ready-made UI components built with TailwindCSS.
-- **@vitejs/plugin-react** – For Vite and React compatibility.
+### Dependencies
+- `@tailwindcss/vite`: ^4.1.5  
+- `aos`: ^2.3.4  
+- `firebase`: ^11.6.1  
+- `react`: ^19.0.0  
+- `react-dom`: ^19.0.0  
+- `react-icons`: ^5.5.0  
+- `react-router`: ^7.5.3  
+- `react-toastify`: ^11.0.5  
+- `swiper`: ^11.2.6  
+- `tailwindcss`: ^4.1.5  
+
+### DevDependencies
+- `@eslint/js`: ^9.22.0  
+- `@types/react`: ^19.0.10  
+- `@types/react-dom`: ^19.0.4  
+- `@vitejs/plugin-react`: ^4.3.4  
+- `daisyui`: ^5.0.35  
+- `eslint`: ^9.22.0  
+- `eslint-plugin-react-hooks`: ^5.2.0  
+- `eslint-plugin-react-refresh`: ^0.4.19  
+- `globals`: ^16.0.0  
+- `vite`: ^6.3.1
+
+
+## 🛠️ How to Run Locally
+1. Clone the repository:  
+```bash
+git clone https://github.com/mdabdullahr/event-explorer.git
+
+2. Navigate to the project directory:
+```bash
+cd event-explorer
+
+3. Install dependencies:
+```bash
+npm install
+
+4. Create a .env file in the root directory and add your Firebase config:
+
+env
+
+VITE_API_KEY=your_api_key
+VITE_AUTH_DOMAIN=your_auth_domain
+VITE_PROJECT_ID=your_project_id
+VITE_STORAGE_BUCKET=your_storage_bucket
+VITE_MESSAGING_SENDER_ID=your_sender_id
+VITE_APP_ID=your_app_id
+
+5. Start the development server:
+```bash
+npm run dev
+
+6. Open your browser and visit http://localhost:5173
+
+👨‍💻 Author
+Abdullah
+GitHub: @mdabdullahr
+Email: mdabdullah162005@gmail.com
+
+📜 License
+This project is licensed under the MIT License.
+
+Thank you for visiting! Feel free to reach out for any questions or suggestions.
 
 
