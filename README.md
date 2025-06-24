@@ -55,6 +55,9 @@ This project is built using **React**, **Firebase**, and **TailwindCSS**, offeri
 ```bash
 git clone https://github.com/mdabdullahr/event-explorer.git
 
+2. Navigate to the project directory:
+
+
 
 
 
