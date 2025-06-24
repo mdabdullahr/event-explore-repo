@@ -52,11 +52,43 @@ This project is built using **React**, **Firebase**, and **TailwindCSS**, offeri
 
 ## 🛠️ How to Run Locally
 1. Clone the repository:  
-```bash
+bash
 git clone https://github.com/mdabdullahr/event-explorer.git
 
 2. Navigate to the project directory:
+bash
+cd event-explorer
 
+3. Install dependencies:
+bash
+npm install
+
+4. Create a .env file in the root directory and add your Firebase config:
+
+env
+
+VITE_API_KEY=your_api_key
+VITE_AUTH_DOMAIN=your_auth_domain
+VITE_PROJECT_ID=your_project_id
+VITE_STORAGE_BUCKET=your_storage_bucket
+VITE_MESSAGING_SENDER_ID=your_sender_id
+VITE_APP_ID=your_app_id
+
+5. Start the development server:
+bash
+npm run dev
+
+6. Open your browser and visit http://localhost:5173
+
+👨‍💻 Author
+Abdullah
+GitHub: @mdabdullahr
+Email: mdabdullah162005@gmail.com
+
+📜 License
+This project is licensed under the MIT License.
+
+Thank you for visiting! Feel free to reach out for any questions or suggestions.
 
 
 
