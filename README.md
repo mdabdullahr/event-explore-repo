@@ -52,8 +52,8 @@ This project is built using **React**, **Firebase**, and **TailwindCSS**, offeri
 
 ## 🛠️ How to Run Locally
 1. Clone the repository:  
-`bash <br/>
-`git clone [https://github.com/mdabdullahr/event-explorer.git](https://github.com/mdabdullahr/event-explore-repo.git)
+`bash 
+``git clone [https://github.com/mdabdullahr/event-explorer.git](https://github.com/mdabdullahr/event-explore-repo.git)
 
 2. Navigate to the project directory:
 bash
