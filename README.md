@@ -5,6 +5,8 @@ Event Explorer is a platform designed to help users discover and explore local e
 
 This project is built using **React**, **Firebase**, and **TailwindCSS**, offering a seamless experience for users to interact with events and reserve seats.
 
+<img src="https://i.ibb.co.com/FbgZmk1M/eve.png"/>
+
 **🔗 Live Site URL:** [https://event-explore-e54a1.web.app/](https://event-explore-e54a1.web.app/)
 
 ## 📋 Features
